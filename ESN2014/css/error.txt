@@ -1,0 +1,4 @@
+A less error occured trying to build your bundle. Please paste the error below in an issue for us at http://github.com/twitter/bootsrap! thanks!
+
+
+{"type":"Syntax","message":"error evaluating function `mix`: Object #<Object> has no method 'toHSL'","filename":"bootstrap.css","index":79572,"line":3080,"column":2,"extract":["  padding-right: 20px;","  #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);","  .border-radius(4px);"]}

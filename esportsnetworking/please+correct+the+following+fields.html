@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 0px;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+       <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html"><img src="img/navbarlogo.png"/></a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+			  <li class='dropdown'>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				Get Started
+				<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+				<li><a href="sponsoresports.html">Sponsor E-Sports</a></li>
+                <li><a href="findsponsorship.html">Find Sponsorship</a></li>
+				</ul>		  
+            </ul>
+			<div class="btn-group pull-right">
+				<a class="btn pull-right" href="whysponsoresports.html"> Why Sponsor E-Sports? </a>
+			</div>
+			<div class="btn-group pull-right">
+				<a class="btn pull-right" href="whatisesports.html">What is E-Sports?</a>
+			</div>
+
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+	
+	<!-- PHP HERE, DUNNO WHAT TO DO WITH IT!-->
+	
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+  <div class="hero-bottom">
+		<div class="container">
+			<center><h1><img src="img/contactname.png"/></h1></center>
+			<div class="row">
+				<section class="span12">
+				<div class="hero-bottom">
+				    <div class="row-fluid">
+						<div class="span3"></div>
+						<div class="span6">
+						<h1>Send us an Email!</h1>
+						<br>
+						<form method="POST" action="contact-form-submission.php">  
+							<p><font color="#DF0101">*Please correct the following fields to send the email</font></p>
+							<div class="control-group">  
+								<label class="control-label" for="input1"><i class="icon-briefcase"></i> Company<font color="#DF0101">*</font></label>
+								<div class="controls">  
+									<input type="text" class="input-xxlarge" name="contact_company" id="input1" placeholder="Company Name or Gamertag">  
+								</div>  
+								<font color="#DF0101">*Please enter your company name or gamertag</font>
+							</div>  
+							
+							<div class="control-group">  
+								<label class="control-label" for="input2"><i class="icon-user"></i> Name<font color="#DF0101">*</font></label>
+								<div class="controls">  
+									<input type="text" class="input-xxlarge" name="contact_name" id="input1" placeholder="Your name">  
+								</div>  
+								<font color="#DF0101">*Please enter your name</font>
+							</div>  
+           
+							<div class="control-group">  
+								<label class="control-label" for="input3"><i class="icon-envelope"></i> Email<font color="#DF0101">*</font></label>
+								<div class="controls">  
+									<input type="text" class="input-xxlarge" name="contact_email" id="input2" placeholder="Your email">  
+								</div>  
+								<font color="#DF0101">*Please enter your email address</font>
+							</div>  
+							
+							<div class="control-group">  
+								<label class="control-label" for="input4"><i class="icon-question-sign"></i> Subject<font color="#DF0101">*</font></label>
+								<div class="controls">  
+									<select type="text" class="input-xxlarge" name="contact_subject" id="input2" placeholder="Interested in working with us?" >
+										<option value="0" disabled selected><font color="#DDDCDC">Please select an option</font></option>
+										<option value="I'm interested in getting the initial marketing plan">I'm interested in getting the initial marketing plan</option>
+										<option value="I'm interested in finding out more about how you work">I'm interested in finding out more about how you work</option>
+										<option value="I want to find out more about E-Sports">I want to find out more about E-Sports</option>
+										<option value="I'm looking for sponsors">I'm looking for sponsors</option>
+										<option value="There something else I'm looking for (Please explain in the message below)">There something else I'm looking for (Please explain in the message below)</option>
+									</select>
+								</div>  
+								<font color="#DF0101">*Please select a subject</font>
+							</div>  
+							
+							<div class="control-group">  
+								<label class="control-label" for="input5"><i class="icon-pencil"></i> Message</label>  
+								<div class="controls">  
+									<textarea name="contact_message" class="input-xxlarge" id="input3" rows="8" class="span5" placeholder="Whats up?"></textarea>  
+								</div>  
+							</div>  
+			<div class="form-actions">  
+                <input type="hidden" name="save" value="contact">  
+                <button type="submit" class="btn btn-large btn-info">Send Email</button>
+											<font color="#DF0101">* Indicates a required field</font>
+            </div>  
+        </form>  
+						</div>
+						<div class="span3"></div>
+				</div>
+				</section>
+				<section class="span12">
+				<div class="hero-bottom">
+				    <div class="row-fluid">
+					<div class="span3"></div>
+					<div class="span6">
+					<h1>Drop us a line!</h1>
+					<p class="tagline">Just to talk or make an appointment!</p>
+					<br>
+						<h1><strong><abbr title="Phone">P:</abbr> <font color="1482b6">(732) 784-7146</font></strong></h1>
+						<br>
+						<address>
+							<h2><strong>Business Hours:</strong><br>
+								Mon-Sat: 9am - 8pm (Eastern Time)<br>
+							</h2>
+						</address>
+						
+						<address>
+							<strong>E-Sports Network, Inc.</strong><br>
+							<abbr title="Phone">P:</abbr> (732) 784-7146
+						</address>
+					</div>
+					<div class="span3"></div>
+				</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<div class="hero-unit">
+		<div class="container">
+         <footer>&copy; E-Sports Network 2011</footer>
+	    </div>
+	</div>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
